@@ -14,7 +14,7 @@ import { CursosService } from './cursos.service';
   imports: [
     CommonModule
   ],
-  //providers: [CursosService],
+  providers: [CursosService],
   exports:[
     CursosComponent
   ]
