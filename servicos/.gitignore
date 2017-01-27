@@ -5,12 +5,7 @@
 /tmp
 
 # dependencies
-/01-hello-world/angular-2-boilerplate/node_modules
-/01-quick-start/quickstart/node_modules
-/directivas/node_modules
-/servicos/node_modules
 /node_modules
-
 
 # IDEs and editors
 /.idea
