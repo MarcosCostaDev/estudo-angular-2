@@ -11,7 +11,9 @@ export class CriarCursoComponent implements OnInit {
 
   cursos: string[] = [];
 
-  constructor(private cursosService:CursosService) { }
+  constructor(private cursosService:CursosService) {
+    
+   }
 
   ngOnInit() {
      this.cursos = this.cursosService.getCursos();
