@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 
 import { CursosComponent } from './cursos.component';
-import { CursosService } from './cursos.service';
+//import { CursosService } from './cursos.service';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { CursosService } from './cursos.service';
   imports: [
     CommonModule
   ],
-  providers: [CursosService],
+ // providers: [CursosService],
   exports:[
     CursosComponent
   ]
