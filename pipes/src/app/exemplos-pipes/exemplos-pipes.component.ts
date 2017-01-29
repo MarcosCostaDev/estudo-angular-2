@@ -24,6 +24,7 @@ export class ExemplosPipesComponent implements OnInit {
     console.log(this.livros);
   }
 
+
   constructor() { }
 
   ngOnInit() {

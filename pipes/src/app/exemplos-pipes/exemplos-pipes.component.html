@@ -18,8 +18,19 @@
 
 filtrar
 <input type="text" name="" [(ngModel)]="fitro">
+
+<h5>Pipe Puro</h5>
+
 <ul>
     <li *ngFor="let liv of livros | filtroArray:fitro">
+        {{liv}}
+    </li>
+</ul>
+
+
+<h5>Pipe Impuro</h5>
+<ul>
+    <li *ngFor="let liv of livros | filtroArrayImpuro:fitro">
         {{liv}}
     </li>
 </ul>
