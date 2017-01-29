@@ -2,7 +2,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
-import { CursosService } from './../cursos/cursos.service';
+import { CursosService } from '../cursos.service';
 
 @Component({
   selector: 'app-curso-detalhe',
@@ -20,7 +20,6 @@ export class CursoDetalheComponent implements OnInit, OnDestroy {
   , private cursoService: CursosService
   , private router: Router
   ) {
-    //this.id = this.route.snapshot.params['id'];
   }
 
   ngOnInit() {
