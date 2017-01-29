@@ -10,11 +10,20 @@ export class ExemplosPipesComponent implements OnInit {
   livro: any = {
     titulo: 'Learning JavaScript Data Structures and Algorithms - Second Edition',
     rating: 4.54321,
-    numeroPaginas:314,
-    preco:44.99,
+    numeroPaginas: 314,
+    preco: 44.99,
     dataLancamento: new Date(2016, 5, 23),
     url: 'http:/a.co/glgjpRP'
   };
+
+  livros = ["Java", "Angular 2"]
+
+
+  addCurso(valor: string) {
+    this.livros.push(valor);
+    console.log(this.livros);
+  }
+
   constructor() { }
 
   ngOnInit() {
