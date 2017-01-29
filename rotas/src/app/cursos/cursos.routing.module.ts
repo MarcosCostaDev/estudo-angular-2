@@ -16,12 +16,12 @@ const cursosRoutes: Routes = [
         component: CursosComponent
     },
     {
-        path: 'curso/:id',
-        component: CursoDetalheComponent
-    },
-    {
         path: 'naoEncontrado',
         component: CursoNaoEncontradoComponent
+    },
+    {
+        path: ':id',
+        component: CursoDetalheComponent
     }
 ];
 
