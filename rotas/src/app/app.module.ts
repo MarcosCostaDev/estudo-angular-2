@@ -11,6 +11,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
 import { AuthService } from './login/auth.service';
+import { AuthGuard } from './guards/auth.guard';
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,7 @@ import { AuthService } from './login/auth.service';
     MaterializeModule,
     AppRoutingModule    
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
