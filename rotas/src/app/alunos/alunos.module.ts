@@ -1,3 +1,4 @@
+import { AlunosGuard } from './../guards/alunos.guard';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -20,6 +21,9 @@ import { AlunosService } from './alunos.service';
         , AlunoFormComponent
         , AlunoDetalheComponent
         ],
-    providers: [AlunosService],
+    providers: [
+        AlunosService,
+        AlunosGuard
+        ]
 })
 export class AlunosModule { }
