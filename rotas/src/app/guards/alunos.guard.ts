@@ -13,8 +13,8 @@ export class AlunosGuard implements CanActivateChild {
           
           if(state.url.includes("editar"))
           {
-              alert("usuário sem acesso");
-              return Observable.of(false);
+              //alert("usuário sem acesso");
+              //return Observable.of(false);
           }
            return true;
        }
