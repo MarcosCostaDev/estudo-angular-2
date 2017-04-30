@@ -14,6 +14,6 @@ export class AlunosDeactivateGuard implements CanDeactivate<IFormCanDeactivate> 
             state: RouterStateSnapshot
         ): Observable<boolean>|Promise<boolean>|boolean {
             console.log("AlunosDeactivateGuard");
-            return component.podeDesativar();
+            return component.podeDesativar  ();
     }
 }

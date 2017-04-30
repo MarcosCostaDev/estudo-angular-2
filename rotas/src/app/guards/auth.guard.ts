@@ -18,7 +18,9 @@ export class AuthGuard implements CanActivate {
     private authService: AuthService,
     private router: Router
 
-  ) { }
+  ) {
+    console.log("AuthGuard");
+   }
 
   canActivate(
     route: ActivatedRouteSnapshot,
