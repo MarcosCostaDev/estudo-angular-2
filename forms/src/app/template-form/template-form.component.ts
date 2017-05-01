@@ -9,14 +9,14 @@ export class TemplateFormComponent implements OnInit {
 
   constructor() { }
 
-  usuario:any = {
+  usuario: any = {
     nome: null,
     email: null
   }
   ngOnInit() {
   }
 
-  onSubmit(form){
+  onSubmit(form) {
     console.log(form.value);
 
     console.log(this.usuario);
